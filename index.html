@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+      color: #2c2c2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px 30px;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .heart {
+      font-size: 3em;
+      animation: pulse 1.5s infinite;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-style: italic;
+      font-size: 1.1em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Hey Love</h1>
+    <h2>This is for you</h2>
+
+    <p>
+      I don’t know how to say everything I feel in person,
+      so I put it here — somewhere permanent.
+    </p>
+
+    <p>
+      You make my ordinary days feel lighter.
+      You calm my chaos.
+      You feel like home.
+    </p>
+
+    <p>
+      If love had a shape,
+      it would look a lot like the way I feel when I think of you.
+    </p>
+
+    <p>
+      I love you — deeply, honestly, and endlessly.
+    </p>
+
+    <footer>
+      — Yours, always
+    </footer>
+  </div>
+</body>
+</html>

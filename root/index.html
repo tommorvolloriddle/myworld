@@ -32,11 +32,9 @@
       content: "";
       position: absolute;
       inset: 0;
-      background-image: url("watermark.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100%;
-      opacity: 0.25; /* watermark effect */
+      background: url("/root/watermark.jpg") center no-repeat;
+      background-size: contain;
+      opacity: 0.08;
       z-index: 0;
     }
 
@@ -69,6 +67,24 @@
       animation: pulse 1.5s infinite;
     }
 
+    .song-link {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 26px;
+      border-radius: 30px;
+      background: #c44569;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+      transition: all 0.25s ease;
+    }
+
+    .song-link:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 15px 28px rgba(0,0,0,0.28);
+    }
+
     footer {
       margin-top: 30px;
       font-style: italic;
@@ -86,6 +102,7 @@
 <body>
   <div class="card">
     <div class="content">
+
       <div class="heart">❤️</div>
 
       <h1>Hey Love</h1>
@@ -103,12 +120,23 @@
       </p>
 
       <p>
-        I love you — deeply, honestly, and endlessly.
+        Hum tere pyaar mein saara aalam bhool gaye…
       </p>
 
+      <p style="font-style: italic;">
+        This song reminds me of you.
+      </p>
+
+      <a href="https://youtu.be/5p4m5Q5xYF8"
+         target="_blank"
+         class="song-link">
+        🎵 Hum Tere Pyaar Mein…
+      </a>
+
       <footer>
-        — Yours, always -- Sacchu
+        — Yours, always
       </footer>
+
     </div>
   </div>
 </body>
